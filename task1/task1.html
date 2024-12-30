@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q1)create variable Calculate the value of zakat for x ,If you know the percentage of zakat = 2.5 %; 
+        document.write("Q1<br>")
+
+        let x = 4050;
+[]
+        function zakat (amount){
+            if (amount>4000){
+                return "zakat is :" + (amount * 2.5)/100;
+            }
+            else{
+                return "no zakat :(";
+            }
+        }
+
+         document.write('\n'+zakat(x));
+
+        //-------------------------------------------------------------------
+        //Q2) 
+        // Correct the syntax error
+        // [ 1,7  9  45, ]
+
+        // ["Str" "alex","moh"
+
+        // 'the','fox' 'over' lazy, 'dog',  ]
+
+        document.write("<br>Q2<br>");
+
+        var arr1 =[1 ,7 ,9, 45] // the 45 must be after the ,
+        var arr2 = ["Str", "alex","moh", 'the','fox', 'over', "lazy", 'dog'] // comma between (str and alex) and between (moh and the ) lazy must be string
+        document.write("arr1 ="+arr1);
+        document.write("<br>");
+        document.write("arr2 ="+arr2);
+        //-------------------------------------------------------------------
+        //Q3)What the index of "Banana","Tomato"
+        document.write("<br>Q3<br>");
+
+        var fruits=["Tomato","Banana","Watermelon"];
+        document.writeln( "\n index of Tommato is :  " + fruits.indexOf("Tomato") +"<br>");
+        document.writeln( "\n index of Banana is :  " + fruits.indexOf("Banana"));
+
+        //-------------------------------------------------------------------
+        //Q4)Create an array represents your:
+        document.write("<br>Q4<br>");
+
+        var myFav = [['Pizza','Mansaf'],['Running','Swimming','Badminton'],["Paranormal Activity","Purple hearts"]];
+        document.write("MyFavorit food : " + myFav[0]);
+        document.write("<br>");
+
+        document.write("MyFavorit sport : " + myFav[1]);
+        document.write("<br>");
+
+        document.write("MyFavorit movies : " + myFav[2]);
+        document.write("<br>");
+
+
+
+        //-------------------------------------------------------------------
+        //Q5)Create a Variable to return the first element in an array 
+        document.write("<br>Q5<br>");
+
+        var numbers = [1,3,5,7,9,0,4];
+        let firstIndex=numbers[0];
+        document.writeln("the first index is :"+firstIndex);
+
+        //-------------------------------------------------------------------
+        //Q6)Create a Variable to return the last element in an array 
+        document.write("<br>Q6<br>");
+
+        let lastIndex=numbers[numbers.length-1];
+        document.writeln("the last index is :"+lastIndex);
+
+
+        //-------------------------------------------------------------------
+        //Q7)Using console make this array to be like this one [1,3,4,6,8,9,10] (push, unshift, shift, pop)
+        document.write("<br>Q7<br>");
+
+        var array = [0,5,7,9]
+        array.shift();
+        array.shift();
+        array.shift();
+        array.unshift(8);
+        array.unshift(6);
+        array.unshift(4);
+        array.unshift(3);
+        array.unshift(1);
+        array.push(10);
+       
+        console.log(array);
+        document.write("in the console");
+
+
+        //-------------------------------------------------------------------
+        //Q8)Using the console try to figure out what the thing thats (push, unshift, shift, pop) return to you[5,9,-7,3.5]
+        document.write("<br>Q8<br>");
+
+        var array2 = [];
+        array2.unshift(-7);
+        array2.unshift(9);
+        array2.unshift(5);
+        array2.push(3.5);
+        console.log(array2);
+        document.write("in the console");
+
+
+
+        //--------------------------------------------------------------------
+        //Q9)Write a JavaScript program to sort the items of an array.
+        document.write("<br>Q9<br>");
+
+        var arr1 = [ -3, 8, 7, 6, 5, -4, 3, 2, 1 ];
+        function sortArray (arr){
+            return arr.sort(function(a,b){return a - b })
+        }
+        document.write(sortArray(arr1));
+
+        //--------------------------------------------------------------------
+        //Q10)Write a JavaScript function that returns rate as text
+        // less than 50 return ==> Fail
+        // equal or between 50 and 59 ===> E
+        // equal or between 60 and 69 ===> D
+        // equal or between 70 and 79 ===> C
+        // equal or between 80 and 89 ===> B
+        // equal or between 90 and 100 ===> A
+        document.write("<br>Q10<br>");
+        
+        function rating(deg) {
+            if (deg < 50) {
+                return deg+"===> fail";
+            } else if (deg >= 50 && deg <= 59) {
+                return deg+'===> E';
+            } else if (deg >= 60 && deg <= 69) {
+                return deg+'===> D';
+            } else if (deg >= 70 && deg <= 79) {
+                return deg+'===> C';
+            } else if (deg >= 80 && deg <= 89) {
+                return deg+'===> B';
+            } else if (deg >= 90 && deg <= 100) {
+                return deg+'===> A';
+            }
+            else{
+               return "wrong entry, try again";
+            }
+        }
+        document.write(rating(prompt("enter deg: ")))
+        document.write("<br>Q11<br>");
+
+        //-----------------------------------------------------
+        //Q11)
+        let pat=[]
+        for (let i =1 ; i <=8 ; i ++){
+            pat.push(i);
+            for(j of pat){
+                document.write(j+" ");
+            }
+            document.write('<br>');
+        }
+    </script>
+    
+</body>
+</html>
