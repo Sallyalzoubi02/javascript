@@ -8,7 +8,16 @@
 <body>
     <script>
         // Q1)create variable Calculate the value of zakat for x ,If you know the percentage of zakat = 2.5 %; 
-        document.write("Q1<br>")
+        document.write("Q1 way 1<br>")
+        //way1
+        let z= 250;
+        let zakat1 = (z * 2.5)/100;
+        document.write(zakat1 + "<br>")
+        document.write("Q1 way 2<br>")
+
+
+        //way2
+       
 
         let x = 4050;
 []
@@ -44,21 +53,23 @@
         document.write("<br>Q3<br>");
 
         var fruits=["Tomato","Banana","Watermelon"];
-        document.writeln( "\n index of Tommato is :  " + fruits.indexOf("Tomato") +"<br>");
-        document.writeln( "\n index of Banana is :  " + fruits.indexOf("Banana"));
+        document.writeln( " index of Tommato is :  " + fruits.indexOf("Tomato") +"<br>");
+        document.writeln( " index of Banana is :  " + fruits.indexOf("Banana"));
 
         //-------------------------------------------------------------------
         //Q4)Create an array represents your:
         document.write("<br>Q4<br>");
 
-        var myFav = [['Pizza','Mansaf'],['Running','Swimming','Badminton'],["Paranormal Activity","Purple hearts"]];
-        document.write("MyFavorit food : " + myFav[0]);
+        var myFavFood =['Pizza','Mansaf']
+        var myFavSport =['Running','Swimming','Badminton']
+        var myFavFilm =["Paranormal Activity","Purple hearts"];
+        document.write("MyFavorit food : " + myFavFood);
         document.write("<br>");
 
-        document.write("MyFavorit sport : " + myFav[1]);
+        document.write("MyFavorit sport : " + myFavSport);
         document.write("<br>");
 
-        document.write("MyFavorit movies : " + myFav[2]);
+        document.write("MyFavorit movies : " + myFavFilm);
         document.write("<br>");
 
 
@@ -87,11 +98,7 @@
         array.shift();
         array.shift();
         array.shift();
-        array.unshift(8);
-        array.unshift(6);
-        array.unshift(4);
-        array.unshift(3);
-        array.unshift(1);
+        array.unshift(1,3,4,6,8);
         array.push(10);
        
         console.log(array);
@@ -103,9 +110,7 @@
         document.write("<br>Q8<br>");
 
         var array2 = [];
-        array2.unshift(-7);
-        array2.unshift(9);
-        array2.unshift(5);
+        array2.unshift(5,9,-7);
         array2.push(3.5);
         console.log(array2);
         document.write("in the console");
@@ -131,7 +136,7 @@
         // equal or between 80 and 89 ===> B
         // equal or between 90 and 100 ===> A
         document.write("<br>Q10<br>");
-        
+         //way 1
         function rating(deg) {
             if (deg < 50) {
                 return deg+"===> fail";
@@ -152,7 +157,9 @@
         }
         document.write(rating(prompt("enter deg: ")))
         document.write("<br>Q11<br>");
+        //way 2
 
+       
         //-----------------------------------------------------
         //Q11)
         let pat=[]

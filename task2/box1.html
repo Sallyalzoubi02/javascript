@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1{
+            background-color: yellow;
+            border: 1px solid black;
+            display: inline-block;
+            width: 40%;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Can i help you ?</h1>
+    <script>
+        const h1 = document.getElementsByTagName('h1')[0];
+
+        h1.onmouseover = function(){help();};
+        
+        function help () {
+            h1.innerHTML = "Hello World!";
+        }
+        
+        h1.onmouseout = function(){out();};
+        
+        function out (){
+            h1.innerHTML = "Can i help you ?";
+        }
+    </script>
+</body>
+</html>
