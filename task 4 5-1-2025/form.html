@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            border: 5px solid black;
+            padding: 20px;
+            width: 600px;
+        }
+        .fild{
+            margin: 10px;
+        }
+
+        .cards{
+            max-width: fit-content;
+            border: 3px solid black;
+            background-color: beige;
+            margin:20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="f1">
+        <div class="fild">
+            <label for="Name">Name:</label>
+            <input type="text" name="" id="Name">
+        </div>
+        <div class="fild">
+        <label for="Age">Age:</label>
+        <input type="number" name="" id="Age">
+        </div>
+        <div class="fild">
+        <label for="gender">Gender:</label>
+        <input type="text" name="" id="grnder">
+        </div>
+        <div class="fild">
+        <label for="BD">Birth Date:</label>
+        <input type="date" name="" id="BD">
+        </div>
+
+        <div class="fild">
+            <label for="img">Upload Your Image:</label>
+            <input type="file" name="" id="img">
+        </div>
+        <hr>
+        <div class="fild">
+            <label for="Des">Description:</label>
+            <input type="text" name="" id="Des">
+        </div>
+        <div class="fild">
+            <label for="major">Major & University:</label>
+            <input type="text" name="" id="major">
+        </div>
+
+        <div class="fild">
+            <label for="prog">Programming languages:</label>
+            <input type="checkbox" name="" id="html" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" name="" id="css" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" name="" id="js" value="JavaScript">
+            <label for="js">JavaScript</label>
+
+        </div>
+
+        <hr>
+
+        <div class="fild">
+            <label for="sibnum">Siblling Number:</label>
+            <input type="number" name="" id="sibnum">
+        </div>
+
+        <div class="fild">
+            <label for="sibdes">Siblling Description:</label>
+            <input type="text" name="" id="sibdes">
+        </div>
+
+        <input type="submit" value="submit">
+    </form>
+
+    <div id="output"></div>
+
+    <script src="form.js"></script>
+</body>
+</html>
